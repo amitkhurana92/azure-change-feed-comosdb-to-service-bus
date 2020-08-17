@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "input",
+      "direction": "in",
+      "connectionStringSetting": "cosmos-db_DOCUMENTDB",
+      "databaseName": "Product",
+      "collectionName": "model",
+      "leaseCollectionName": "leases",
+      "createLeaseCollectionIfNotExists": true
+    },
+    {
+      "connection": "poc2020_RootManageSharedAccessKey_SERVICEBUS",
+      "name": "outputSbMsg",
+      "queueName": "outqueue",
+      "direction": "out",
+      "type": "serviceBus"
+    }
+  ]
+}
