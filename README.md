@@ -23,4 +23,6 @@ Azure ComosDB (Trigger) -> Azure Function -> Azure Service Bus (Output Binding)
   * function.json : Contains binding. Change the value according to your database and queue configuration.
   * run.csx : Contains the code. In this we have created a custom class model that contains the variable we need to send on the queue.
 
+Detailed explanation can be found on my blog post: https://techopaths.com/programming/binding-service-bus-to-azure-cosmosdb-change-feed/
+
 
